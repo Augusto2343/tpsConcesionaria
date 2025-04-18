@@ -5,77 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTOS DE ALTA GAMA</title>
-    <link rel="stylesheet"href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="globalStyles.css">
+    <link rel="stylesheet"href="styleIndex.css">
+  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="body">
 <header class="header">
+    <div class="contenidoHeader">
     <h1 id="titlePag">Autos de alta gama </h1>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="catalogo.html">CATALOGO</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="nosotros.html">Mas sobre nosotros </a>
-    </li>
-  </ul>
-   <div id="bannerText">
-  <img id="bannerHeader" src="https://www.clarin.com/img/2020/10/20/la-arquitectura-se-define-por___EKB7ekdML_1256x620__1.jpg" width="700" height="400">
-  <div class="textBtnBanner">
-  <h2 id="textBanner">Nuevos modelos!</h2>
-  <a href="catalogo.html" id="btnBanner">Ver catalogo</a>
+
+    <nav class="nav">
+      <a class="nav-link" href="#">HOME</a>
+      <button class="nav-link btnCatalogo" >CATALOGO</button>
+      <a class="nav-link" href="./nosotros">Mas sobre nosotros </a>
+    </nav>
+    <animated-icons
+  src="https://animatedicons.co/get-icon?name=Menu&style=minimalistic&token=c9a15816-8582-4762-810c-23adfb75a127"
+  trigger="hover"
+  attributes='{"variationThumbColour":"#000000","variationName":"Dark","variationNumber":4,"numberOfGroups":2,"strokeWidth":2.5,"backgroundIsGroup":true,"defaultColours":{"group-1":"#E6E9EC","group-2":"#000000","background":"#000000"}}'
+  height="60px"
+  width="60px"
+  class="menuIcon"
+></animated-icons>
+  </div>
+
+
+    <div class="seccionCatalogo"> 
+      <div class="col-2 navLatSeccionAutos">
+        <div id="simple-list-example" class="navMarcas d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+          <a class="p-1 rounded" href="#fordCars">Ford</a>
+          <a class="p-1 rounded" href="#bmwCars">BMW</a>
+          <a class="p-1 rounded" href="#audiCars">Audi</a>
+          <a class="p-1 rounded" href="#simple-list-item-4">Mercedes Benz</a>
+        </div>
+      </div>
+
+      <hr class="divisionCatalogoAutos">
+        <div class=" col-8 seccionAutos">
+            <h2 id="fordCars">Ford</h2>
+            <div class="vehicle-grid" >
+              <div class="vehicle-card">
+                <img src="https://www.vdm.ford.com/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2024/collections/equipment/3-2/24_Mustang_Dark_Horse_13_32.jpg" alt="Mustang Black Horse">
+                <h3>Ford Mustang Black Horse</h3>
+                <p class="price">Desde $41,990</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://www.romadridcar.com/wp-content/uploads/2020/08/medidas-ford-gt-1600x850.jpg" alt="Ford GT">
+                <h3>GT40</h3>
+                <p class="price">Desde $51,995</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_9527866fefb84e3e840b1fd28e2a23c0.jpg" alt="F-150 Raptor">
+                <h3>F-150 Raptor</h3>
+                <p class="price">Desde $45,025</p>
+              </div>
+            </div>  
+            <h2 id="bmwCars">BMW</h2>
+            <div class="vehicle-grid" >
+              <div class="vehicle-card">
+                <img src="https://www.diariomotor.com/imagenes/2013/10/vista-delantera-lateral-bmw-i8-735169.jpg" alt="I8 Roadster">
+                <h3>I8 Roadster</h3>
+                <p class="price">Desde $55,990</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://soymotor.com/sites/default/files/imagenes/noticia/bmw_m4_50_jahre_edition_1.jpg" alt="M4 Competition">
+                <h3>M4 Competition</h3>
+                <p class="price">Desde $51,995</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://www.bmw.com.ar/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-gallery-impressions-m3-competition-02_1920.jpg.asset.1669650892281.jpg" alt="M3 Competition">
+                <h3>M3 Competition</h3>
+                <p class="price">Desde $45,025</p>
+              </div>
+            </div>  
+            <h2 id="audiCars">Audi</h2>
+            <div class="vehicle-grid" >
+              <div class="vehicle-card">
+                <img src="https://cdn.motor1.com/images/mgl/zxg8mL/s1/audi-rs-e-tron-gt.webp" alt="Etron GT">
+                <h3>E-tron GT</h3>
+                <p class="price">Desde $80,990</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://soymotor.com/sites/default/files/imagenes/noticia/audi-s8-2022-principal-soymotor.jpg" alt="S8">
+                <h3>Audi S8</h3>
+                <p class="price">Desde $72,995</p>
+              </div>
+              
+              <div class="vehicle-card">
+                <img src="https://www.elnuevoherald.com/ultimas-noticias/quozw1/picture296491754/alternates/LANDSCAPE_1140/Audi%20Q7%202025.jpg" alt="Q7">
+                <h3>Audi Q7</h3>
+                <p class="price">Desde $54,025</p>
+              </div>
+            </div> 
+          </div>
+      </div>
+      
+
+    </div>
+  </div>
+  </div>
+  </header>
+
+  <div class="bannerText">
+  <div class="banner-content">
+    <h2 id="textBanner">Nuevos modelos!</h2>
+    <a href="catalogo.html" id="btnBanner">Ver catalogo</a>
+  </div>
+
 </div>
-</div>
-</header>
+
 <div class="toolBar">
-  <ul class="toolNav">
-    <li><a href="" id="linkTool">BMW</a></li>
-    <li><a href="" id="linkTool">Mercedes Benz</a> </li>
-    <li><a href="" id="linkTool">Ford</a> </li>
-    <li><a href="" id="linkTool">Audi</a> </li>
-  </ul>
+
+  <button class="dropdown">Marcas 
+    <div class="toolNav">
+      <a href="./Marcas/bmw.html" class="linkTool">BMW</a>
+      <a href="" class="linkTool">Mercedes Benz</a> 
+      <a href="" class="linkTool">Ford</a> 
+      <a href="" class="linkTool">Audi</a> 
+    </div>
+  </button>
+
   <h3 id="titleTool">ADT-Autos</h3>
 </div>
 <section class="backSect">
 <h2 id="titleSection">Marcas con las que trabajamos</h2>
   <section class="cards">
-    <div class="card">
-      <div class="card-body">
-        <img src="https://www.vdm.ford.com/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2024/collections/equipment/3-2/24_Mustang_Dark_Horse_13_32.jpg"  id="imgCard">
-        <h2 id="titleCard">Ford</h2>
-        <p id="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
-        <a href="#" id="btnCard">Ver mas</a>
-      </div>
+    <div class="brand_card">
+        <img src="https://www.vdm.ford.com/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2024/collections/equipment/3-2/24_Mustang_Dark_Horse_13_32.jpg"  class="imgCard">
+        <h2 class="titleCard">Ford</h2>
+        <p class="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
+        <a href="#" class="btnCard">Ver mas</a>
     </div>  
 
-    <div class="card">
-      <div class="card-body">
-        <img src="https://www.diariomotor.com/imagenes/2013/10/vista-delantera-lateral-bmw-i8-735169.jpg"  id="imgCard">
-        <h2 id="titleCard">BMW</h2>
-        <p id="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
-        <a href="#" id="btnCard">Ver mas</a>
-      </div>
+    <div class="brand_card">
+        <img src="https://www.diariomotor.com/imagenes/2013/10/vista-delantera-lateral-bmw-i8-735169.jpg"  class="imgCard">
+        <h2 class="titleCard">BMW</h2>
+        <p class="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
+        <a href="#" class="btnCard">Ver mas</a>
     </div>  
 
-    <div class="card">
-      <div class="card-body">
-        <img src="https://www.lavoz.com.ar/resizer/gCCrP2DEk-Np0rA4D2-aqNpanAQ=/0x0:0x0/980x640/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/S3DZ4SRFI5FF3MHIHPM7GCWVKI.jpg"  id="imgCard">
-        <h2 id="titleCard">Audi</h2>
-        <p id="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
-        <a href="#" id="btnCard">Ver mas</a>
-      </div>
+    <div class="brand_card">
+        <img src="https://www.lavoz.com.ar/resizer/gCCrP2DEk-Np0rA4D2-aqNpanAQ=/0x0:0x0/980x640/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/S3DZ4SRFI5FF3MHIHPM7GCWVKI.jpg"  class="imgCard">
+        <h2 class="titleCard">Audi</h2>
+        <p class="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
+        <a href="#" class="btnCard">Ver mas</a>
     </div>  
 
-    <div class="card">
-      <div class="card-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/1114997-6406105aedea8.jpg"  id="imgCard">
-        <h2 id="titleCard">Mercedes Benz</h2>
-        <p id="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
-        <a href="#" id="btnCard">Ver mas</a>
-      </div>
+    <div class="brand_card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/1114997-6406105aedea8.jpg"  class="imgCard">
+        <h2 class="titleCard">Mercedes Benz</h2>
+        <p class="textCard">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque voluptates molestiae reiciendis animi aut nobis, incidunt soluta consequatur tenetur asperiores dolor iure, ex natus commodi aliquam dolore deserunt quo nam culpa magni quos autem voluptatem veniam. Suscipit, fugit laborum.</p>
+        <a href="#" class="btnCard">Ver mas</a>
     </div>  
   </section>
 </section>
@@ -85,25 +173,39 @@
   <div class="container">
 
 
-    <div class="slide active">
-      <div class="contentSlide">
-        <img src="https://cdn.motor1.com/images/mgl/P3nLMK/s3/2024-ford-mustang-dark-horse.jpg" id="imgSlide">
-        <h2 id="textSlide">Ford Mustang Dark Horse</h2>
+    <div class="slide imgFord active">
+      <div class="contentSlide" >
+        <h2 class="textSlide">Ford Mustang Dark Horse</h2>
     </div>
   </div>
 
-  <div class="slide">
-    <div class="contentSlide">
-      <img src="https://cdn.motor1.com/images/mgl/ew9xK/s1/2016-bmw-i8.webp" id="imgSlide">
-      <h2 id="textSlide">BMW I8</h2>
+  <div class="slide imgBmw">
+    <div class="contentSlide ">
+      <h2 class="textSlide">BMW I8</h2>
     </div>
   </div>
   <div class="prev">&#10094;</div>
   <div class="next">&#10095;</div>
 </div>
 </section>
+<footer class="footer">
+  <div class="footerContent">
+<nav class="footerNav">
+  <h2>Mapa de sitio</h2>
+  <a class="footerLink" href="#">Home</a>
+  <a class="footerLink" href="catalogo.html">Catalogo</a>
+  <a class="footerLink" href="nosotros.html">Mas sobre nosotros</a>
+  <a class="footerLink" href="contacto.html">Contacto</a>
+</nav>
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154.8198374084497!2d-69.21307835291927!3d-51.62105859047303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6f9520253c63d%3A0xbc61b948b9a40a12!2sAlcorta%2064%2C%20Z9400AZB%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1740576249149!5m2!1ses-419!2sar" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <strong class="copy"><h5>DIGITALME 2025&copy;</h5></strong>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"  integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./script.js"></script>
-<strong><h6>AGUAS DE TE </h6></strong>
+  <script src="./scriptGlobal.js"></script>
 </body>
 </html>
